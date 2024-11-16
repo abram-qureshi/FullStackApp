@@ -1,150 +1,87 @@
 # ReadVine
 
-Welcome to **ReadVine**! 📚 A community-driven platform where users can exchange or lend books with each other in a convenient and user-friendly way.
+ReadVine is a comprehensive web application that combines a robust back-end with an interactive front-end to deliver a seamless user experience. This project demonstrates features such as user authentication, book management, and dynamic search capabilities.
 
-## Overview
+---
 
-ReadVine is designed for book lovers who want to share their books with the community. Users can create book listings, offer books for lending or exchange, and search for books based on availability, location, and more.
+## Features
 
-### Features
-
-- **User Authentication**: Sign up, log in, and recover your password easily.
-- **Book Listings**: Users can add, edit, delete, or display books available for exchange or lending.
+- **User Authentication**: Secure sign-up, login, and password recovery functionalities.
+- **Book Listings**: Users can add, edit, delete, and display books available for exchange or lending.
 - **Book Search**: Search and filter books by title, author, genre, availability, and location.
 - **Profile Management**: Each user has a profile that includes their listed books.
 
+---
+
 ## Tech Stack
 
-- **Frontend**: React.js for a responsive, interactive user interface.
-- **Backend**: Django REST framework for building the API, handling user authentication, and managing data.
-- **Database**: PostgreSQL for reliable storage of users, books, and transactions.
-- **Authentication**: Uses JWT tokens for secure authentication and user management.
+### Front-End
+- **Framework**: React.js
+- **Styling**: CSS
+- **State Management**: React Hooks
+
+### Back-End
+- **Framework**: Django REST Framework
+- **Database**: PostgreSQL
+- **Authentication**: JWT-based authentication
+
+---
 
 ## Installation
 
-Follow these steps to set up the project locally.
-
 ### Prerequisites
-
 - Python (version 3.8+)
 - Node.js and npm
 - PostgreSQL
-- Git
 
-### Backend Setup
+### Steps
 
-1. **Clone the Repository**:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/abram-qureshi/FullStackApp.git
+   cd FullStackApp
+   ```
 
-    ```sh
-    git clone https://github.com/abram-qureshi/readvine.git
-    cd readvine
-    ```
+2. **Set up the backend**:
+   - Navigate to the backend directory:
+     ```bash
+     cd backend
+     ```
+   - Create a virtual environment and activate it:
+     ```bash
+     python -m venv venv
+     source venv/bin/activate  # On Windows: venv\Scripts\activate
+     ```
+   - Install the required packages:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Set up the database:
+     ```bash
+     python manage.py makemigrations
+     python manage.py migrate
+     ```
+   - Run the development server:
+     ```bash
+     python manage.py runserver
+     ```
 
-2. **Create and Activate a Virtual Environment**:
+3. **Set up the frontend**:
+   - Navigate to the frontend directory:
+     ```bash
+     cd ../frontend
+     ```
+   - Install the dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the development server:
+     ```bash
+     npm start
+     ```
 
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+4. **Access the application**:
+   - Frontend: `http://localhost:3000`
+   - Backend API: `http://localhost:8000/api/`
 
-3. **Install Requirements**:
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-4. **Set Up Environment Variables**:
-
-    Create a `.env` file in the `readvine` directory:
-
-Contact me for the env file
-
-5. **Run Migrations**:
-
-    ```sh
-    python manage.py migrate
-    ```
-
-6. **Run the Development Server**:
-
-    ```sh
-    python manage.py runserver
-    ```
-
-### Frontend Setup
-
-1. **Navigate to the Frontend Directory**:
-
-    ```sh
-    cd frontend
-    ```
-
-2. **Install Dependencies**:
-
-    ```sh
-    npm install
-    ```
-
-3. **Run the Development Server**:
-
-    ```sh
-    npm run serve
-    ```
-
-## Usage
-
-- Visit `http://localhost:8000` for the backend API.
-- The frontend will be accessible at `http://localhost:8080`.
-- Register as a user to start adding and searching for books.
-
-## API Endpoints
-
-Here are some of the key API endpoints:
-
-- **Authentication**:
-  - `/api/auth/register/` - Register a new user.
-  - `/api/auth/login/` - Obtain JWT token.
-- **Books**:
-  - `/api/books/` - List, add, update, or delete books.
-  - `/api/books/<id>/` - Get specific book details.
-  
-Refer to the API documentation for more details.
-
-## Contributing
-
-We welcome contributions from the community! 🚀
-
-1. **Fork the Repository**.
-2. **Create a Feature Branch**:
-
-    ```sh
-    git checkout -b feature/YourFeature
-    ```
-
-3. **Commit Changes**:
-
-    ```sh
-    git commit -m "Add your feature description here"
-    ```
-
-4. **Push to Your Branch**:
-
-    ```sh
-    git push origin feature/YourFeature
-    ```
-
-5. **Create a Pull Request**.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-Feel free to reach out:
-
-- **GitHub**: [abram-qureshi](https://github.com/abram-qureshi)
-- **Email**: 2023tm93737@wilp.bits-pilani.ac.in
-
-
-Happy sharing! 📚✨
+---
