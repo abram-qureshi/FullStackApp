@@ -15,7 +15,7 @@ ReadVine is designed for book lovers who want to share their books with the comm
 
 ## Tech Stack
 
-- **Frontend**: Vue.js for a responsive, interactive user interface.
+- **Frontend**: React.js for a responsive, interactive user interface.
 - **Backend**: Django REST framework for building the API, handling user authentication, and managing data.
 - **Database**: PostgreSQL for reliable storage of users, books, and transactions.
 - **Authentication**: Uses JWT tokens for secure authentication and user management.
